@@ -13,7 +13,7 @@ from itertools import compress
 from sklearn import model_selection, svm, metrics
 import numpy as np
 from sklearn.neural_network import MLPClassifier
-df_old=pd.read_csv("../input/heart-disease-uci/heart.csv")
+df_old=pd.read_csv("../input/heart-disease-uci/heart.csv") # replace the content in quotes with the path of your dataset
 
 # analyze the dataset
 dd=list(df_old) # take columnsof df
