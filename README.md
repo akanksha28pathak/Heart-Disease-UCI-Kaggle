@@ -1,5 +1,5 @@
 # Heart-Disease-UCI-Kaggle
-This repository contains code for classification of normal and abnormal state of heart using UCI Heart disease database. SVM classifier has been used for the purpose. An important step for dealing with categorical variables in SVM is to convert them to dummy variables. However, the idea of using dummy variables which large number of categories is not supported. Yet in this code, we show a usual framework which can be followed for obtaining preliminary results.   
+This repository contains code for classification of normal and abnormal state of heart using UCI Heart disease database. SVM classifier has been used for the purpose. An important step for dealing with categorical variables in SVM is to convert them to dummy variables. However, the idea of using dummy variables when number of categories are large, is not preferred method. Yet in this code, we show a usual framework which can be followed for obtaining preliminary results.   
 
 The database can be obtained at https://www.kaggle.com/ronitf/heart-disease-uci. The data base contains following attributes-
 
