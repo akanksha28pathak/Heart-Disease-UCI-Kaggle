@@ -33,7 +33,7 @@ frames = [a, b, c, d, e, f, g, h, df_old]
 df_old = pd.concat(frames, axis = 1)
 df_old.head()
 del a, b, c,d,e,f,g,h
-df=df_old.drop(['cp','thal','slope','ca','exang','fbs','sex','restecg'],axis=1)
+df=df_old.drop(['cp','thal','slope','ca','exang','fbs','sex','restecg'],axis=1)  # drop original variables
 
 dd_hat=list(df) # take columnsof df
 dd=dd_hat[0:30] # remove target column
@@ -72,12 +72,12 @@ for ou_f in range(20):
       train_fold=df_fr[~flag]
       del flag 
       
-      # normalize train_data[excluding 'kfold' and 'target']
+      # obtain train_data[excluding 'kfold' and 'target']
       train_data=train_fold.drop(['kfold','target'],axis=1)
       train_norm=train_data
       del train_data
       
-      # normalize test data with mean and std of train data
+      # obtain test data [excluding 'kfold' and 'target']
       test_data=test_fold.drop(['kfold','target'],axis=1)
       test_norm=test_data
             
