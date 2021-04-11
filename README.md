@@ -16,3 +16,18 @@ The database can be obtained at https://www.kaggle.com/ronitf/heart-disease-uci.
 11. the slope of the peak exercise ST segment
 12. number of major vessels (0-3) colored by flourosopy
 13. thal: 3 = normal; 6 = fixed defect; 7 = reversable defec
+
+Outline of code:
+
+Following variables were converted to dummy variables (name of variables as mentioned in dataframe):
+1. cp
+2. thal
+3. slope
+4. ca
+5. exang
+6. fbs
+7. restecg
+8. sex
+
+The original variables were deleted after conversion to dummy variables.
+Five-fold cross validation, itertaed 20 times was performed, to obtain unbiased estimate of performance.
